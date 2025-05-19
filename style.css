@@ -1,0 +1,158 @@
+body{
+    background-color: rgb(242, 235, 227);
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
+
+.fraunces{
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+}
+  
+.montserrat{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.montserrat{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.product-card{
+    display: flex;
+    padding: 5px 5px;
+    float: left;
+    width: 100%;
+    height: auto;
+    box-sizing: content-box;
+    border-radius: 20px;
+    margin: 0;
+    margin-top: 50px;
+
+}
+.photo{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+.photo img{
+    width: 50%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.img-desktop{
+    display: block;
+}
+.img-mobile{
+    display: none;
+}
+.product-detials{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 23%;
+    padding: 20px;
+    flex-direction: column;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.product-detials p{
+    line-height: 1.6;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(108, 114, 137);
+}
+.product-detials h4{
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(108, 114, 137);
+    
+}
+.product-detials h1{
+    font-family: "Fraunces", serif;
+    color: rgb(28, 35, 43);
+}
+.prodcut-price{
+    display: flex;
+    align-items: center;
+}
+.prodcut-price h1{
+    font-size: 35px;
+    display: flex;
+    float: left;
+    font-family: "Fraunces", serif;
+    color: rgb(60, 128, 103);
+    padding-right: 20px;
+}
+.prodcut-price h5{
+    display: flex;
+    float: right;
+    color: rgb(108, 114, 137);
+    text-decoration: line-through;
+}
+button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    background-color:rgb(60, 128, 103);
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover{
+    background-color: rgb(27, 65, 51); 
+    transform: scale(1.05);  
+}
+
+/* Phone Devices Query */
+@media only screen and (max-width: 850px) {
+    .product-detials {
+      width: 100%;
+      height: auto;
+      border-bottom-left-radius: 20px;
+      border-top-right-radius: 0;
+      padding: 0;
+    }
+    .product-detials h1, h4, p {
+        padding-left: 20px;
+    }
+    .product-card{
+        flex-direction: column;
+        width: 100%;
+        margin-top: -4px;
+        margin-left: -4px;
+    }
+    .photo{
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .photo img{
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;   
+        width: 100%;     
+    }
+    .img-desktop{
+        display: none;
+    }
+    .img-mobile{
+        display: block;
+        width: 100%;
+    }
+  }
